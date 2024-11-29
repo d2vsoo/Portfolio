@@ -1,0 +1,486 @@
+@font-face {
+    font-family: 'Pretendard-Regular';
+    src: url('https://fastly.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Cafe24Ohsquare';
+    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/Cafe24Ohsquare.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Gyeonggi_Batang_Regular';
+    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/2410-3@1.0/Batang_Regular.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+}
+
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 10vh;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body, button, input {
+    font-family: 'Pretendard-Regular';
+    color: black;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+#Wrap {
+    width: 1920px;
+    height: 6000px;
+    background-color: black;
+}
+
+/* header 영역 */
+header {
+        width: 100%;
+        height: 100px;
+
+        display: flex;
+        position: fixed;
+        justify-content: space-between;
+        justify-items: center;
+        align-items: center;
+        z-index: 100;
+
+        background-color: black;
+        color: white;
+        transition: all 1s;
+    }
+
+menu {
+    width: 20%;
+    height: 60px;
+    margin-left: 100px;
+    padding-top: 25px;
+    box-sizing: border-box;
+
+    text-align: center;
+    line-height: 25px;
+}
+
+menu p:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+@keyframes menu {
+    0% {
+        transform: translateX(-100%);
+        
+    } to {
+        transform: translateX(0);
+    }
+}
+
+@keyframes menuclose {
+    0% {
+        transform: translateX(0);
+        
+    } 100% {
+        transform: translateX(-100%);
+    } 
+}
+
+.menu {
+    width: 30vw;
+    height: 100vh;
+    background-color: white;
+    color: black;
+    position: absolute;
+    top: 100px;
+    left: 0;
+    display: none;
+}
+
+.menu li {
+    height: 200px;
+}
+
+.menu li a {
+    width: 100%;
+    height: 210px;
+    padding-top: 100px;
+    box-sizing: border-box;
+    display: block;
+}
+
+.menu li a:hover {
+    background-color: black;
+    color: white;
+}
+
+h1 {
+    font-family: 'Gyeonggi_Batang_Regular';
+    font-weight: 600;
+    text-align: center;
+}
+
+nav {
+    width: 20%;
+    height: 60px;
+    margin-right: 100px;
+    padding-top: 15px;
+    box-sizing: border-box;
+
+    text-align: center;
+    line-height: 20px;
+}
+
+/* main 영역 */
+main {
+    width: 100%;
+    height: 96%;
+    background-color: yellowgreen;
+}
+
+/* section01 */
+.section01 {
+    width: 100%;
+    height: 30%;
+    background: url('/public/img/background.jpg') center;
+    position: relative;
+}
+
+.section01 p {
+    font-family: 'Cafe24Ohsquare';
+    color: white;
+    font-size: 200px;
+    position: absolute;
+}
+
+.section01 p:first-of-type {
+    left: 10%;
+    bottom: 300px;
+}
+
+.section01 p:last-of-type {
+    right: 10%;
+    bottom: 50px;
+}
+
+/* section02 */
+.section02 {
+    width: 100%;
+    height: 400px;
+    background-color: white;
+    text-align: center;
+    padding-top: 100px;
+    box-sizing: border-box;
+}
+
+.introTitle {
+    font-family: 'Gyeonggi_Batang_Regular';
+    font-weight: 600;
+    font-size: 34px;
+    font-style: italic;
+}
+
+@keyframes updown {
+    0% {
+        opacity: 0;
+        transform: translate3d(0, -100%, 0);
+    } to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.intro {
+    font-size: 20px;
+    margin-top: 30px;
+    line-height: 40px;
+}
+
+@keyframes downup {
+    0% {
+        opacity: 0;
+        transform: translate3d(0, 60%, 0);
+    } to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* section03 */
+.section03 {
+    width: 100%;
+    height: 850px;
+    background-color: #f1f1f1;
+    position: relative;
+}
+
+.section03 h2, .section04 h2 {
+    font-family: 'Cafe24Ohsquare';
+    font-size: 64px;
+    padding: 60px;
+    box-sizing: border-box;
+}
+
+.introduce {
+    position: absolute;
+    top: 200px;
+    left: 50px;
+    line-height: 35px;
+    text-align: right;
+}
+
+.certificate {
+    position: absolute;
+    top: 200px;
+    left: 550px;
+    line-height: 35px;
+}
+
+.bear {
+    position: absolute;
+    top: 400px;
+    left: 550px;
+}
+
+.education {
+    position: absolute;
+    bottom: 85px;
+    right: 50px;
+    line-height: 35px;
+}
+
+.education table {
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.education th, td {
+    border: 1px solid black;
+    padding: 10px 30px;
+    text-align: center;
+}
+
+/* section04 - skill */
+.section04 {
+    width: 100%;
+    height: 550px;
+    background-color: white;
+    position: relative;
+}
+
+.swiperContainer {
+    width: 1000px;
+    height: 200px;
+    margin-left: 100px;
+    float: left;
+}
+
+.swiper-slide {
+    width: 250px;
+    height: 100%;
+    background-color: black;
+    font-family: 'Cafe24Ohsquare';
+    color: white;
+    font-size: 28px;
+    text-align: center;
+    border-radius: 15px;
+    box-shadow: inset 3px 3px 15px 3px #ffffff;
+
+    padding-top: 80px;
+    box-sizing: border-box;
+}
+
+.skill-text {
+    width: 850px;
+    position: absolute;
+    right: 0px;
+    line-height: 40px;
+}
+
+
+/* section05 | section06 - work */
+.workTitle {
+    width: 100%;
+    font-family: 'Cafe24Ohsquare';
+    font-size: 64px;
+    padding: 60px;
+    background-color: black;
+    color: white;
+    position: relative;
+}
+
+.workTitle02 {
+    background-color: white;
+    color: black;
+}
+
+.workTitle:hover {
+    cursor: pointer;
+}
+
+.section05 {
+    width: 100%;
+    height: 650px;
+    background-color: #f1f1f1;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    justify-items: center;
+    align-items: center;
+    overflow: hidden;
+    display: none;
+}
+
+.section05 div {
+    width: 400px;
+    height: 250px;
+    position: relative;
+    padding-top: 80px;
+    box-sizing: border-box;
+
+    text-align: center;
+    font-family: 'Gyeonggi_Batang_Regular';
+    line-height: 40px;
+
+    box-shadow: 3px 3px 15px 0 #a5a5a5;
+    border-radius: 10px;
+}
+
+.section05 div::after {
+    width: 100%;
+    height: 100%;
+    content: "";
+
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    background-size: cover;
+    background-position: center;
+
+    opacity: 0.3;
+}
+
+.section05 div:nth-child(1)::after {
+    background-image: url('/public/img/아바타.png');
+}
+
+.section05 div:nth-child(2)::after {
+    background-image: url('/public/img/한산.png');
+}
+
+.section05 div:nth-child(3)::after {
+    background-image: url('/public/img/하이키.png');
+}
+
+.section05 div:nth-child(4)::after {
+    background-image: url('/public/img/아름다운배웅.png');
+}
+
+.section05 div:nth-child(5)::after {
+    background-image: url('/public/img/독도리플렛.png');
+}
+
+.section05 div:nth-child(6)::after {
+    background-image: url('/public/img/유승호.png');
+}
+
+.section05 div:nth-child(7)::after {
+    background-image: url('/public/img/고데기.png');
+}
+
+.section05 div:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+    transition: all 1.5s;
+}
+
+/* 모달창 */
+.modalWrap {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgba(48, 48, 48, 0.541);
+    display: none;
+    animation: fadein 1s ;
+
+    z-index: 100;
+}
+
+@keyframes fadein {
+    from {
+        opacity: 0;
+        transition: scale(0.5);
+    } to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+.modal h3 {
+    margin: 60px 80px;
+    font-size: 28px;
+    color: black;
+    font-family: 'Cafe24Ohsquare';
+}
+
+.modal {
+    position: absolute;
+    top: 80px;
+    left: 260px;
+    width: 1400px;
+    height: 800px;
+    overflow: scroll;
+    background-color: white;
+}
+
+.modal img {
+    margin-left: 80px;
+}
+/* 
+#exit {
+    width: 120px;
+    height: 40px;
+    margin: 40px 0 40px 1150px;
+    background-color: white;
+    color: rgb(84, 92, 136);
+    font-weight: 600;
+    background-color: white;
+    border: 1px solid rgb(84, 92, 136);
+    box-shadow: 3px 3px 3px rgb(100, 100, 100);
+    transition-duration: 0.3s;
+    font-size: 16px;
+}
+
+#exit:hover {
+    cursor: pointer;
+}
+
+#exit:active {
+    margin-right: 5px;
+    box-shadow: none;
+    cursor: pointer;
+} */
+
+
+
+.section06 {
+    width: 100%;
+    height: 600px;
+    background-color: #f1f1f1;
+}
