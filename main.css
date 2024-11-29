@@ -46,7 +46,6 @@ a {
 
 #Wrap {
     width: 1920px;
-    height: 4100px;
     background-color: black;
 }
 
@@ -155,12 +154,8 @@ main {
 /* section01 */
 .section01 {
     width: 100%;
-    height: 30%;
-<<<<<<< HEAD:main.css
-    background: url('./public/img/background.jpg') center;
-=======
+    height: 1200px;
     background: url('../public/img/background.jpg') center;
->>>>>>> 3a537e39adf383b0dec82b6643ecf639fa891393:public/main.css
     position: relative;
 }
 
@@ -380,7 +375,6 @@ main {
 }
 
 .section05 div:nth-child(1)::after {
-<<<<<<< HEAD:main.css
     background-image: url('./public/img/아바타.png');
 }
 
@@ -406,33 +400,6 @@ main {
 
 .section05 div:nth-child(7)::after {
     background-image: url('./public/img/고데기.png');
-=======
-    background-image: url('../public/img/아바타.png');
-}
-
-.section05 div:nth-child(2)::after {
-    background-image: url('../public/img/한산.png');
-}
-
-.section05 div:nth-child(3)::after {
-    background-image: url('../public/img/하이키.png');
-}
-
-.section05 div:nth-child(4)::after {
-    background-image: url('../public/img/아름다운배웅.png');
-}
-
-.section05 div:nth-child(5)::after {
-    background-image: url('../public/img/독도리플렛.png');
-}
-
-.section05 div:nth-child(6)::after {
-    background-image: url('../public/img/유승호.png');
-}
-
-.section05 div:nth-child(7)::after {
-    background-image: url('../public/img/고데기.png');
->>>>>>> 3a537e39adf383b0dec82b6643ecf639fa891393:public/main.css
 }
 
 .section05 div:hover {
@@ -475,16 +442,13 @@ main {
 .modal {
     position: absolute;
     top: 80px;
-    left: 260px;
-    width: 1400px;
+    left: 340px;
+    width: 1200px;
     height: 800px;
     overflow: scroll;
     background-color: white;
 }
 
-.modal img {
-    margin-left: 80px;
-}
 /* 
 #exit {
     width: 120px;
