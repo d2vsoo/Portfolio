@@ -1,27 +1,31 @@
 // 현재 날짜와 시간 header에 넣기
-// 날짜
-let date = new Date();
 
-let year = date.getFullYear();
-let month = date.getMonth()+1;
-let day = date.getDate();
+function updateTime(){
+    // 날짜
+    let date = new Date();
 
-let 날짜 = `${year}년 ${month}월 ${day}일`;
+    let year = date.getFullYear();
+    let month = date.getMonth()+1;
+    let day = date.getDate();
 
-console.log(날짜)
+    let 날짜 = `${year}년 ${month}월 ${day}일`;
 
-// 시간
-let hour = date.getHours();
-let minutes = date.getMinutes();
-let seconds = date.getSeconds();
+    console.log(날짜)
 
-let 시간 = `${hour}시 ${minutes}분 ${seconds}초`;
+    // 시간
+    let hour = date.getHours();
+    let minutes = date.getMinutes();
+    let seconds = date.getSeconds();
 
-console.log(시간)
+    let 시간 = `${hour}시 ${minutes}분 ${seconds}초`;
 
-document.querySelector('.date').innerHTML = 날짜;
-document.querySelector('.time').innerHTML = 시간;
+    console.log(시간)
 
+    document.querySelector('.date').innerHTML = 날짜;
+    document.querySelector('.time').innerHTML = 시간;
+}
+
+setInterval(updateTime, 1000);
 // ===========================================================================================
 
 // 메뉴 나타내기
@@ -120,8 +124,21 @@ $('.workTitle01').on('click', () => {
     }
 }) 
 
+$('.workTitle02').on('click', () => {
+    
+    if(clickNum===0){
+        $('.section06').stop().slideDown(600).css('display', 'flex');
+        clickNum +=1;
+    } else {
+        $('.section06').stop().slideUp(600).css('display', 'flex');
+        clickNum = 0;
+    }
+}) 
+
+
 // ===========================================================================================
 
+// design
 // 모달창 띄우기
 for (let i = 1; i <= 7; i++) {
     $('.work0' + i).on('click', function () {
@@ -136,6 +153,23 @@ for (let i = 1; i <= 7; i++) {
         // 클릭요소가 모달창인지 확인하기
         if ($(event.target).is('#work0' + i)) {
             // $(this) = 현재 이벤트 발생 요소
+            $(this).css('display', 'none');
+        }
+    });
+}
+
+// web
+// 반복문으로 모달창 열기
+for (let j=1; j<=3; j++) {
+    $('.webWork0' + j).on('click', function(){
+        $('#webwork0' + j).css('display', 'block');
+    });
+
+    // 작품 하나를 클릭했을 때
+    $('#webwork0' + j).on('click', function(e){
+        // 클릭한 요소가 작품 모달창 바깥 영역인지 확인하기
+        if ($(e.target).is('#webwork0'+j)) {
+            // 바깥영역 클릭 시 모달창 닫기
             $(this).css('display', 'none');
         }
     });

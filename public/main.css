@@ -32,6 +32,7 @@ html {
 body, button, input {
     font-family: 'Pretendard-Regular';
     color: black;
+    overflow-x: hidden;
 }
 
 li {
@@ -45,7 +46,7 @@ a {
 
 #Wrap {
     width: 1920px;
-    height: 6000px;
+    height: 4100px;
     background-color: black;
 }
 
@@ -59,7 +60,7 @@ header {
         justify-content: space-between;
         justify-items: center;
         align-items: center;
-        z-index: 100;
+        z-index: 3;
 
         background-color: black;
         color: white;
@@ -149,7 +150,6 @@ nav {
 main {
     width: 100%;
     height: 96%;
-    background-color: yellowgreen;
 }
 
 /* section01 */
@@ -313,7 +313,7 @@ main {
 
 
 /* section05 | section06 - work */
-.workTitle {
+.workTitle, .contactTitle {
     width: 100%;
     font-family: 'Cafe24Ohsquare';
     font-size: 64px;
@@ -370,6 +370,7 @@ main {
 
     background-size: cover;
     background-position: center;
+    border-radius: 10px;
 
     opacity: 0.3;
 }
@@ -432,7 +433,7 @@ main {
     }
 }
 
-.modal h3 {
+.modal h3, .modal-web h3 {
     margin: 60px 80px;
     font-size: 28px;
     color: black;
@@ -478,9 +479,150 @@ main {
 } */
 
 
-
+/* section06 - web 작품 */
 .section06 {
     width: 100%;
     height: 600px;
     background-color: #f1f1f1;
+    display: flex;
+    gap: 100px;
+    justify-content: center;
+    padding-top: 30px;
+    box-sizing: border-box;
+    display: none;
+}
+
+.flip-outer {
+    width: 350px;
+    height: 400px;
+    border-radius: 10px;
+}
+
+.flip-inner {
+    width: 100%;
+    height: 100%;
+    position: relative;
+
+    transition: all 1s;
+    transform-style: preserve-3d;
+}
+
+.front {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-color: black;
+    opacity: 0.6;
+
+    padding: 50px;
+    box-sizing: border-box;
+
+    text-align: center;
+    font-family: 'Gyeonggi_Batang_Regular';
+    line-height: 40px;
+    color: white;
+    border-radius: 10px;
+
+    backface-visibility: hidden;
+    z-index: 1;
+}
+
+.back {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    border-radius: 15px;
+    transform: rotateY(180deg);
+}
+
+.flip-inner:hover {
+    cursor: pointer;
+    transform: rotateY(180deg);
+    box-shadow: 3px 3px 15px 3px #a5a5a5;
+    border-radius: 15px;
+}
+
+.webButton {
+    width: 350px;
+    height: 100px;
+    text-align: center;
+    margin-top: 30px;
+    line-height: 40px;
+}
+
+/* 모달창 */
+
+.modal img {
+    margin-left: 80px;
+    width: 1000px;
+}
+
+.modal-web {
+    position: absolute;
+    top: 80px;
+    left: 360px;
+    width: 1200px;
+    height: 800px;
+    overflow : scroll;
+    background-color: rgb(240, 241, 245);
+}
+
+.modal-web img {
+    margin-left: 80px;
+    width: 1000px;
+}
+
+.web-work03 div{
+    width: 90%;
+    margin: 0 0 20px 90px;
+    line-height: 40px;
+
+}
+
+/* section07 - contact */
+.section07 {
+    width: 100%;
+    height: 600px;
+    color: white;
+    position: relative;
+}
+
+.section07 img {
+    margin: 50px 0 0 70px;
+}
+
+.section07 div:first-child {
+    position: absolute;
+    left: 300px;
+}
+
+.contactTitle {
+    line-height: 30px;
+    background: none;
+}
+
+.section07 p {
+    font-size: 42px;
+    position: absolute;
+    top: 250px;
+    right: 500px;
+}
+
+.section07 p a {
+    width: 100%;
+    display: block;
+}
+
+/* footer 영역 */
+footer {
+    width:100%;
+    height: 100px;
+    background-color: #f1f1f1;
+    text-align: center;
+    padding-top: 20px;
+    box-sizing: border-box;
+    margin-top: 23px;
 }
