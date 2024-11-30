@@ -1,16 +1,16 @@
 // 현재 날짜와 시간 header에 넣기
 
-function updateTime(){
+function updateTime() {
     // 날짜
     let date = new Date();
 
     let year = date.getFullYear();
-    let month = date.getMonth()+1;
+    let month = date.getMonth() + 1;
     let day = date.getDate();
 
     let 날짜 = `${year}년 ${month}월 ${day}일`;
 
-    console.log(날짜)
+    // console.log(날짜)
 
     // 시간
     let hour = date.getHours();
@@ -19,7 +19,7 @@ function updateTime(){
 
     let 시간 = `${hour}시 ${minutes}분 ${seconds}초`;
 
-    console.log(시간)
+    //console.log(시간)
 
     document.querySelector('.date').innerHTML = 날짜;
     document.querySelector('.time').innerHTML = 시간;
@@ -34,7 +34,7 @@ const menu = document.querySelector('.menu');
 const submenu = document.querySelectorAll('.menu li');
 
 let menuClick = 0;
-document.querySelector('.menuButton').addEventListener('click', ()=>{
+document.querySelector('.menuButton').addEventListener('click', () => {
 
     if (menuClick === 0) {
         menu.style.display = 'block';
@@ -44,13 +44,13 @@ document.querySelector('.menuButton').addEventListener('click', ()=>{
     } else {
         menu.style.animation = 'menuclose 1.5s forwards';
         menuClick = 0;
-    }    
+    }
 })
 
 // submenu 눌렀을 때 메뉴 사라지게 하기
 // submenu의 개수만큼 forEach로 반복문 작성
-submenu.forEach( submenu => {
-    submenu.addEventListener('click', (e)=>{
+submenu.forEach(submenu => {
+    submenu.addEventListener('click', (e) => {
         menu.style.animation = 'menuclose 1.5s forwards';
         menuClick = 0;
     })
@@ -63,7 +63,7 @@ submenu.forEach( submenu => {
 const header = document.querySelector('.header');
 const main = document.getElementsByTagName('main');
 
-window.addEventListener('scroll', ()=>{
+window.addEventListener('scroll', () => {
     // console.log(window.scrollY)
 
     if (window.scrollY > 100) {
@@ -86,7 +86,7 @@ window.addEventListener('scroll', ()=>{
 //         const target = e.target.dataset.id;
 //         const targetElement = document.querySelector(`#${target}`);
 //         console.log(targetElement)
-    
+
 //         if(targetElement){
 //             targetElement.scrollIntoView({
 //                 block : 'center'
@@ -101,9 +101,9 @@ window.addEventListener('scroll', ()=>{
 const introTitle = document.querySelector('.introTitle');
 const intro = document.querySelector('.intro');
 
-window.addEventListener('scroll', ()=>{
+window.addEventListener('scroll', () => {
     // 495보다 크고 1500보다 작을 때
-    if(window.scrollY >= 600) {
+    if (window.scrollY >= 600) {
         introTitle.style.animation = 'updown 2s';
         intro.style.animation = 'downup 2s';
     }
@@ -114,29 +114,28 @@ window.addEventListener('scroll', ()=>{
 // work-design 누르면 design 작품 보이도록 하기
 let clickNum = 0;
 $('.workTitle01').on('click', () => {
-    
-    if(clickNum===0){
+
+    if (clickNum === 0) {
         $('.section05').stop().slideDown(600).css('display', 'grid');
-        clickNum +=1;
+        clickNum += 1;
     } else {
         $('.section05').stop().slideUp(600).css('display', 'grid');
         clickNum = 0;
     }
-}) 
+})
 
 $('.workTitle02').on('click', () => {
-    
-    if(clickNum===0){
+
+    if (clickNum === 0) {
         $('.section06').stop().slideDown(600).css('display', 'flex');
-        clickNum +=1;
+        clickNum += 1;
     } else {
         $('.section06').stop().slideUp(600).css('display', 'flex');
         clickNum = 0;
     }
-}) 
+})
 
-
-// ===========================================================================================
+// ===========================================================================
 
 // design
 // 모달창 띄우기
@@ -159,18 +158,18 @@ for (let i = 1; i <= 7; i++) {
 }
 
 // web
-// 반복문으로 모달창 열기
-for (let j=1; j<=4; j++) {
-    $('.webWork0' + j).on('click', function(){
-        $('#webwork0' + j).css('display', 'block');
-    });
+    // 반복문으로 모달창 열기
+    for (let j = 1; j <= 4; j++) {
+        $('.webWork0' + j).on('click', function () {
+            $('#webwork0' + j).css('display', 'block');
+        });
 
-    // 작품 하나를 클릭했을 때
-    $('#webwork0' + j).on('click', function(e){
-        // 클릭한 요소가 작품 모달창 바깥 영역인지 확인하기
-        if ($(e.target).is('#webwork0'+j)) {
-            // 바깥영역 클릭 시 모달창 닫기
-            $(this).css('display', 'none');
-        }
-    });
-}
+        // 작품 하나를 클릭했을 때
+        $('#webwork0' + j).on('click', function (e) {
+            // 클릭한 요소가 작품 모달창 바깥 영역인지 확인하기
+            if ($(e.target).is('#webwork0' + j)) {
+                // 바깥영역 클릭 시 모달창 닫기
+                $(this).css('display', 'none');
+            }
+        });
+    }
