@@ -160,7 +160,7 @@ for (let i = 1; i <= 7; i++) {
 
 // web
 // 반복문으로 모달창 열기
-for (let j=1; j<=3; j++) {
+for (let j=1; j<=4; j++) {
     $('.webWork0' + j).on('click', function(){
         $('#webwork0' + j).css('display', 'block');
     });
