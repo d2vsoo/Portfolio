@@ -557,6 +557,10 @@ main {
     line-height: 30px;
 }
 
+.webButton a:hover {
+    color: #a5a5a5;
+}
+
 /* 모달창 */
 
 .modal img {
@@ -604,7 +608,7 @@ main {
 
 .section07 div:first-child {
     position: absolute;
-    left: 300px;
+    left: 200px;
 }
 
 .contactTitle {
@@ -614,7 +618,7 @@ main {
 
 .section07 form {
     position: absolute;
-    right: 100px;
+    right: 250px;
     top : 50px;
     width: 1000px;
     height: 480px;
@@ -639,7 +643,7 @@ main {
     height: 30px;
     border: none;
     text-align: center;
-    cursor:pointer;
+    cursor:text;
 }
 
 
@@ -698,6 +702,7 @@ main {
     height: 35px;
     background-color: white;
     position: absolute;
+    bottom: 15px;
     right: 30px;
     border: none;
 }

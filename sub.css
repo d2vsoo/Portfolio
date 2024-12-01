@@ -1,8 +1,632 @@
 @media screen and (max-width : 1024px) {
-
     
+    /* header 영역 */    
+    nav {
+        font-size: 14px;
+    }
+
+    /* main 영역 */
+    main {
+        width: 100%;
+        height: 96%;
+    }
+
+    /* section01 */
+    .section01 p {
+        font-size: 140px;
+    }
+
+    .section01 p:first-of-type {
+        left: 5%;
+    }
+
+    .section01 p:last-of-type {
+        right: 5%;
+    }
+
+    /* section03 */
+    .section03 {
+        height: 1170px;
+    }
+
+    /* section04 - skill */
+    .section04 {
+        height: 800px;
+    }
+
+    .swiperContainer {
+        margin-left: 0;
+        margin-top: 30px;
+    }
+
+    .skill-text {
+        width: 550px;
+        text-align: center;
+        position: absolute;
+        top: 480px;
+        right: 210px;
+    }
+
+    /* section05 | section06 - work */
+    .section05 {
+        height: 1300px;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    /* 모달창 */
+    .modal h3, .modal-web h3 {
+        font-size: 20px;
+    }
+
+    .modal {
+        top: 80px;
+        left: 40px;
+        width: 90%;
+    }
+
+    .modal img {
+        width: 90%;
+        margin-left: 5%;
+        margin-bottom: 60px;
+    }
+
+    /* section06 - web 작품 */
+    .section06 {
+        height: 900px;
+    }
+
+    .slideWrapper {
+        width: 100%;
+        position: relative;
+    }
+
+    .slideContainer {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 0;
+        justify-items: center;
+        padding-top: 60px;
+    }
+
+    .web {
+        width: 250px;
+        height: 400px;
+    }
+
+    .flip-outer {
+        width: 250px;
+        height: 300px;
+    }
+
+    .front {
+        font-size: 11px;
+    }
+
+    .webButton {
+        width: 100%;
+        height: 60px;
+        font-size: 12px;
+        line-height: 20px;
+    }
+
+    /* 모달창 */
+    .modal-web {
+        left: 30px;
+        width: 93%;
+    }
+
+    .modal-web img {
+        margin-left: 40px;
+        margin-bottom: 60px;
+        width: 90%;
+    }
+
+    .web-work03 div {
+        width: 90%;
+        margin: 0 0 20px 80px;
+        font-size: 13px;
+    }
+
+    video {
+        width: 92%;
+    }
+
+    .video p {
+        font-size: 13px;
+        margin-bottom: 10px;
+    }
+
+    /* section07 - contact */
+    .section07 {
+        height: 1150px;
+        position: relative;
+    }
+
+    .section07 img {
+        position: absolute;
+        top: 100px;
+    }
+
+    .section07 div:first-child {
+        position: absolute;
+        top: 50px;
+        left: 25%;
+    }
+
+    .section07 form {
+        left: 40px;
+        top : 600px;
+        width: 90%;
+    }
+
+    #emailForm td {
+        width: 40%;
+    }
+
+    /* 글 작성 form input/select 태그 css */
+    /* 게시글 제목 */
+    .writetitle::placeholder {
+        padding-left: 655px;
+    }
+
+    /* 내용 작성 칸 */
+    .writeContent::placeholder {
+        padding: 210px 0 0 550px;
+    }
 }
 
-@media screen and (max-width : 640px) {
-    
+@media screen and (max-width : 768px) {
+
+    /* header 영역 */
+    header {
+        height: 80px;
+        font-size: 13px;
+    }
+
+    menu {
+    width: 10%;
+    height: 60px;
+    margin-left: 70px;
+    padding-top: 18px;
+
+    }
+
+    .menu {
+    width: 30%;
+    top: 80px;
+    }
+
+    .menu li a {
+    height: 220px;
+    }
+
+    h1 {
+    font-size: 26px;
+    margin-left: 35px;
+    }
+
+    nav {
+    margin-right: 60px;
+    padding-top: 10px;
+    }
+
+    /* main 영역 */
+    main {
+        width: 100%;
+        height: 96%;
+    }
+
+    /* section01 */
+    .section01 {
+        height: 800px;
+        background-size: contain;
+    }
+
+    .section01 p {
+        font-size: 100px;
+    }
+
+    .section01 p:first-of-type {
+        left: 10%;
+        bottom: 200px;
+    }
+
+    .section01 p:last-of-type {
+        right: 10%;
+        bottom: 50px;
+    }
+
+    /* section02 */
+    .introTitle {
+        font-size: 26px;
+    }
+
+    .intro {
+        font-size: 16px;
+    }
+
+    .section03 h2, .section04 h2 {
+        font-size: 50px;
+        padding: 60px;
+        box-sizing: border-box;
+    }
+
+    /* section03 */
+    .section03 {
+        height: 930px;
+        font-size: 13px;
+    }
+
+    .introduce {
+        top: 180px;
+        left: 60px;
+        line-height: 25px;
+    }
+
+    .introduce img {
+        width: 250px;
+    }
+
+    .certificate {
+        top: 180px;
+        left: 370px;
+        line-height: 25px;
+    }
+
+    .bear {
+        width: 250px;
+        top: 320px;
+        left: 370px;
+    }
+
+    .education {
+        top: 610px;
+        right: 30px;
+        line-height: 25px;
+        font-size: 11px;
+    }
+
+    .education table {
+        width: 600px;
+    }
+
+    .td-title {
+        width: 270px;
+    }
+
+    /* section04 - skill */
+    .swiperContainer {
+        width: 700px;
+    }
+
+    .swiper-slide {
+        font-size: 24px;
+    }
+
+    .skill-text {
+        width: 100%;
+        position: absolute;
+        right: 0px;
+        line-height: 40px;
+        font-size: 14px;
+    }
+
+    /* section05 | section06 - work */
+    .workTitle, .contactTitle {
+        font-size: 50px;
+    }
+
+    .section05 {
+        height: 1400px;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .section05 div {
+        width: 300px;
+        height: 250px;
+        position: relative;
+        padding-top: 90px;
+
+        line-height: 30px;
+    }
+
+    /* 모달창 */
+    .modal h3, .modal-web h3 {
+        font-size: 20px;
+    }
+
+    /* section06 - web 작품 */
+    .section06 {
+        height: 1300px;
+    }
+
+    .slideContainer {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .web {
+        width: 330px;
+    }
+
+    .flip-outer {
+        width: 330px;
+    }
+
+    .front {
+        padding-top: 100px;
+        box-sizing: border-box;
+        font-size: 13px;
+    }
+
+    .webButton {
+        width: 100%;
+        font-size: 12px;
+        margin-top: 15px;
+        line-height: 30px;
+    }
+
+    .webButton p:nth-child(2), .webButton p:nth-child(3) {
+        line-height: 20px;
+    }
+
+    /* 모달창 */
+    .web-work03 div, .tooth-main {
+        width: 90%;
+        margin: 0 0 20px 60px;
+        font-size: 13px;
+    }
+
+    /* section07 - contact */
+    .section07 {
+        height: 1150px;
+        position: relative;
+        font-size: 13px;
+    }
+
+    .section07 img {
+        margin: 50px 0 0 30px;
+    }
+
+    .section07 div:first-child {
+        left: 22.5%;
+    }
+
+    /* 글 작성 form input/select 태그 css */
+
+    #writer::placeholder, #company::placeholder {
+        font-size: 0.8em;
+        padding-left: 65%;
+        box-sizing: border-box;
+    }
+
+    /* 게시글 제목 */
+    .writetitle::placeholder {
+        padding-left: 85%;
+    }
+
+    /* 내용 작성 칸 */
+    .writeContent::placeholder {
+        padding: 210px 0 0 75%;
+    }
+
+    #writeSubmit {
+        width: 100px;
+        height: 30px;
+        font-size: 11px;
+    }
+}
+
+@media screen and (max-width : 480px) {
+    /* header 영역 */
+
+    menu {
+        margin-left: 10%;
+    }
+
+    h1 {
+    font-size: 22px;
+    margin-left: 50px;
+    }
+
+    nav {
+    margin-right: 40px;
+    font-size: 11px;
+    }
+
+    /* main 영역 */
+
+    /* section01 */
+
+    .section01 p {
+        font-size: 60px;
+    }
+
+    .section01 p:first-of-type {
+        left: 5%;
+        bottom: 150px;
+    }
+
+    .section01 p:last-of-type {
+        right: 5%;
+        bottom: 50px;
+    }
+
+    /* section02 */
+    .introTitle {
+        font-size: 26px;
+    }
+
+    .intro {
+        font-size: 16px;
+    }
+
+    .section03 h2, .section04 h2 {
+        font-size: 50px;
+        padding: 60px;
+        box-sizing: border-box;
+    }
+
+    /* section03 */
+    .section03 {
+        height: 930px;
+        font-size: 13px;
+    }
+
+    .introduce {
+        top: 180px;
+        left: 60px;
+        line-height: 25px;
+    }
+
+    .introduce img {
+        width: 250px;
+    }
+
+    .certificate {
+        top: 180px;
+        left: 370px;
+        line-height: 25px;
+    }
+
+    .bear {
+        width: 250px;
+        top: 320px;
+        left: 370px;
+    }
+
+    .education {
+        top: 610px;
+        right: 30px;
+        line-height: 25px;
+        font-size: 11px;
+    }
+
+    .education table {
+        width: 600px;
+    }
+
+    .td-title {
+        width: 270px;
+    }
+
+    /* section04 - skill */
+    .swiperContainer {
+        width: 700px;
+    }
+
+    .swiper-slide {
+        font-size: 24px;
+    }
+
+    .skill-text {
+        width: 100%;
+        position: absolute;
+        right: 0px;
+        line-height: 40px;
+        font-size: 14px;
+    }
+
+    /* section05 | section06 - work */
+    .workTitle, .contactTitle {
+        font-size: 50px;
+    }
+
+    .section05 {
+        height: 1400px;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .section05 div {
+        width: 300px;
+        height: 250px;
+        position: relative;
+        padding-top: 90px;
+
+        line-height: 30px;
+    }
+
+    /* 모달창 */
+    .modal h3, .modal-web h3 {
+        font-size: 20px;
+    }
+
+    /* section06 - web 작품 */
+    .section06 {
+        height: 1300px;
+    }
+
+    .slideContainer {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .web {
+        width: 330px;
+    }
+
+    .flip-outer {
+        width: 330px;
+    }
+
+    .front {
+        padding-top: 100px;
+        box-sizing: border-box;
+        font-size: 13px;
+    }
+
+    .webButton {
+        width: 100%;
+        font-size: 12px;
+        margin-top: 15px;
+        line-height: 30px;
+    }
+
+    .webButton p:nth-child(2), .webButton p:nth-child(3) {
+        line-height: 20px;
+    }
+
+    /* 모달창 */
+    .web-work03 div, .tooth-main {
+        width: 90%;
+        margin: 0 0 20px 60px;
+        font-size: 13px;
+    }
+
+    /* section07 - contact */
+    .section07 {
+        height: 1150px;
+        position: relative;
+        font-size: 13px;
+    }
+
+    .section07 img {
+        margin: 50px 0 0 30px;
+    }
+
+    .section07 div:first-child {
+        left: 22.5%;
+    }
+
+    /* 글 작성 form input/select 태그 css */
+
+    #writer::placeholder, #company::placeholder {
+        font-size: 0.8em;
+        padding-left: 65%;
+        box-sizing: border-box;
+    }
+
+    /* 게시글 제목 */
+    .writetitle::placeholder {
+        padding-left: 85%;
+    }
+
+    /* 내용 작성 칸 */
+    .writeContent::placeholder {
+        padding: 210px 0 0 75%;
+    }
+
+    #writeSubmit {
+        width: 100px;
+        height: 30px;
+        font-size: 11px;
+    }
 }
