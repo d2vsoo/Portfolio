@@ -633,4 +633,146 @@
         width: 80px;
         font-size: 10px;
     }
+
+    footer {
+        font-size: 11px;
+    }
+}
+
+@media screen and (max-width : 360px) {
+    /* header 영역 */
+    menu {
+        margin-left: 10%;
+    }
+
+    h1 {
+        margin-left: 0;
+        font-size: 24px;
+        position: absolute;
+        left: 200px;
+    }
+
+    nav {
+        display: none;
+    }
+
+    /* main 영역 */
+
+    /* section01 */
+    .section01 {
+        height: 500px;
+    }
+
+    .section01 p {
+        font-size: 40px;
+    }
+
+    .section01 p:first-of-type {
+        left: 5%;
+        bottom: 100px;
+    }
+
+    .section01 p:last-of-type {
+        right: 5%;
+        bottom: 40px;
+    }
+
+    /* section02 */
+    
+    .introTitle {
+        font-size: 18px;
+    }
+
+    .section03 h2, .section04 h2 {
+        font-size: 30px;
+    }
+
+    /* section03 */
+    .section03 {
+        height: 1180px;
+    }
+
+    .introduce {
+        top: 120px;
+        left: 40px;
+    }
+
+    .introduce img {
+        width: 250px;
+    }
+
+    .certificate {
+        top: 530px;
+        left: 40px;
+    }
+
+    .education {
+        top: 730px;
+    }
+
+    /* section04 - skill */
+
+    .section04 {
+        height: 600px;
+    }
+
+    .swiper-slide {
+        font-size: 14px;
+    }
+
+    .skill-text {
+        line-height: 30px;
+        font-size: 11px;
+    }
+
+    /* section05 | section06 - work */
+    .workTitle, .contactTitle {
+        font-size: 30px;
+    }
+
+    .section05 {
+        height: 2050px;
+    }
+
+    /* 모달창 */
+    .modal {
+        top: 130px;
+        height: 80%;
+    }
+
+    .modal img {
+        margin-bottom: 30px;
+    }
+
+    /* section06 - web 작품 */
+    /* 모달창 */
+    .web-work03 div, .video {
+        margin: 0 0 20px 30px;
+    }
+
+    /* section07 - contact */
+    .section07 {
+        height: 500px;
+        font-size: 10px;
+    }
+
+    .section07 div:first-child {
+        top: 0;
+    }
+
+    .section07 img {
+        width: 250px;
+    }
+
+    .section07 form {
+        display: none;
+    }
+
+    .section07 p {
+        color: white;
+        font-size: 16px;
+        position: absolute;
+        top: 430px;
+        left: 100px;
+    }
 }
