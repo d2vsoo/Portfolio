@@ -16,6 +16,9 @@
 
     <!-- jquery -->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <!-- 반응형 css -->
+    <link rel="stylesheet" href="./sub.css">
 </head>
 
 <body>
@@ -438,11 +441,44 @@
                     <img src="./public/img/me3.jpg" alt="me03" width="360">
                     <h3 class="contactTitle"> Contact Me </h3>
                 </div>
-                <p>
-                    <a href="mailto:d2vr1v2r@gmail.com">
-                        d2vr1v2r@gmail.com
-                    </a>
-                </p>
+
+                <!-- 이메일 보내기 폼 -->
+                <iframe name="email" style="display: none;"></iframe>
+
+                <form role="form"
+                    action="https://script.google.com/macros/s/AKfycbz3rSYpiEpfjfB0DT0xTH963XWPHWaF224fHIZ7aCnpBjQ6BqIrlusXmAAmsEMwmD5NkQ/exec"
+                    method="post" target="email" onsubmit="alert('이메일이 전송되었습니다. 감사합니다.')">
+
+                    <table id="emailForm">
+                        <tr>
+                            <th> 작성자 </th>
+                            <td>
+                                <input type="text" id="writer" name="writer" required placeholder="10자 이내" maxlength="10">
+                            </td>
+                            <th>
+                                회사명
+                            </th>
+                            <td>
+                                <input type="text" id="company" name="company" required placeholder="10자 이내" maxlength="10" >
+                            </td>
+                        </tr>
+                        <tr>
+                            <th> 제목 </th>
+                            <td colspan="3"> 
+                                <input type="text" class="writetitle" required placeholder="24자 이내" name="writetitle" maxlength="24"> 
+                            </td>
+                        </tr>
+                        <tr>
+                            <th> 내용 </th>
+                            <td class="writebottom" colspan="3">
+                                    <textarea name="writeContent" class="writeContent" required maxlength="1000" placeholder="1000자 이내 작성 가능"></textarea>
+                            </td>
+                        </tr>
+                    </table>
+                    <button type="submit" id="writeSubmit">
+                        전송하기
+                    </button>
+                </form>
             </section>
         </main>
 
