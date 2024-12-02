@@ -475,7 +475,7 @@
 
     /* section03 */
     .section03 {
-        height: 1150px;
+        height: 1200px;
     }
 
     .introduce {
@@ -639,7 +639,7 @@
     }
 }
 
-@media screen and (max-width : 360px) {
+@media screen and (max-width : 370px) {
     /* header 영역 */
     menu {
         margin-left: 10%;
@@ -689,7 +689,7 @@
 
     /* section03 */
     .section03 {
-        height: 1180px;
+        height: 1250px;
     }
 
     .introduce {
@@ -754,6 +754,10 @@
     .section07 {
         height: 500px;
         font-size: 10px;
+    }
+
+    .email {
+        display: block;
     }
 
     .section07 div:first-child {

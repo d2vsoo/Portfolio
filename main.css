@@ -169,11 +169,13 @@ main {
 .section01 p:first-of-type {
     left: 10%;
     bottom: 300px;
+    font-style: italic;
 }
 
 .section01 p:last-of-type {
     right: 10%;
     bottom: 50px;
+    font-style: italic;
 }
 
 /* section02 */
@@ -600,6 +602,10 @@ main {
     height: 600px;
     color: white;
     position: relative;
+}
+
+.email {
+    display: none;
 }
 
 .section07 img {
