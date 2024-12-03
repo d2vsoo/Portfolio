@@ -652,7 +652,6 @@ main {
     cursor:text;
 }
 
-
 #writer::placeholder, #company::placeholder {
     font-size: 0.8em;
     padding-left: 215px;

@@ -1,27 +1,12 @@
-@media screen and (max-width : 1024px) {
-    
-    /* header 영역 */    
-    nav {
-        font-size: 14px;
-    }
-
-    /* main 영역 */
-    main {
-        width: 100%;
-        height: 96%;
-    }
-
+@media screen and (max-width : 1700px) {
     /* section01 */
-    .section01 p {
-        font-size: 140px;
-    }
 
     .section01 p:first-of-type {
-        left: 5%;
+        left: 12%;
     }
 
     .section01 p:last-of-type {
-        right: 5%;
+        right: 12%;
     }
 
     /* section03 */
@@ -31,20 +16,300 @@
 
     /* section04 - skill */
     .section04 {
-        height: 800px;
+        height: 600px;
     }
 
     .swiperContainer {
         margin-left: 0;
-        margin-top: 30px;
+        
     }
 
     .skill-text {
         width: 550px;
         text-align: center;
         position: absolute;
-        top: 480px;
+        top: 230px;
         right: 210px;
+    }
+
+    /* section05 | section06 - work */
+    .section05 {
+        height: 1000px;
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    /* 모달창 */
+
+    .modal {
+        left: 5%;
+        width: 90%;
+    }
+
+    .modal img {
+        width: 90%;
+        margin-left: 5%;
+        margin-bottom: 60px;
+    }
+
+    /* section06 - web 작품 */
+    .section06 {
+        height: 900px;
+    }
+
+    .slideWrapper {
+        width: 100%;
+        position: relative;
+    }
+
+    .slideContainer {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 0;
+        justify-items: center;
+        padding-top: 60px;
+    }
+
+    .web {
+        width: 450px;
+        height: 400px;
+    }
+
+    .flip-outer {
+        width: 450px;
+        height: 300px;
+    }
+
+    .front {
+        font-size: 11px;
+    }
+
+    .webButton {
+        width: 100%;
+        height: 60px;
+        font-size: 12px;
+        line-height: 20px;
+    }
+
+    /* 모달창 */
+    .modal-web {
+        left: 3%;
+        width: 93%;
+    }
+
+    .modal-web img {
+        margin-left: 40px;
+        margin-bottom: 60px;
+        width: 90%;
+    }
+
+    .web-work03 div {
+        width: 90%;
+        margin: 0 0 20px 80px;
+        font-size: 13px;
+    }
+
+    video {
+        width: 92%;
+    }
+
+    .video p {
+        font-size: 13px;
+        margin-bottom: 10px;
+    }
+
+    /* section07 - contact */
+    .section07 {
+        height: 1150px;
+        position: relative;
+    }
+
+    .section07 img {
+        position: absolute;
+        top: 100px;
+    }
+
+    .section07 div:first-child {
+        position: absolute;
+        top: 50px;
+        left: 9%;
+    }
+
+    .section07 form {
+        left: 40px;
+        top : 600px;
+        width: 90%;
+    }
+
+    #emailForm td {
+        width: 40%;
+    }
+
+    /* placeholder */
+    #writer::placeholder, #company::placeholder {
+        padding-left: 61%;
+    }
+
+    /* 게시글 제목 */
+    .writetitle::placeholder {
+        padding-left: 90%;
+    }
+
+    /* 내용 작성 칸 */
+    .writeContent::placeholder {
+        padding: 17% 0 0 90%;
+    }
+}
+
+@media screen and (max-width : 1495px) {
+    /* section01 */
+    .section01 p:first-of-type {
+        left: 8%;
+    }
+
+    .section01 p:last-of-type {
+        right: 8%;
+    }
+
+    /* section04 - skill */
+    .skill-text {
+        width: 500px;
+        top: 33%;
+        right: 10%;
+    }
+
+    /* section05 | section06 - work */
+    .section05 {
+        height: 100vh;
+    }
+
+    /* section06 - web 작품 */
+    /* 모달창 */
+    .modal-web img {
+        margin-left: 5%;
+    }
+
+    .web-work03 div {
+        margin: 0 0 20px 9%;
+    }
+
+    /* section07 - contact */
+    /* 내용 작성 칸 */
+    .writeContent::placeholder {
+        padding: 20% 0 0 90%;
+    }
+}
+
+@media screen and (max-width : 1400px) {
+    /* section01 */
+    .section01 p:first-of-type {
+        left: 5%;
+    }
+
+    .section01 p:last-of-type {
+        right: 5%;
+    }
+
+    /* section04 - skill */
+    .swiperContainer {
+        width: 60%;
+        margin-left: 0;
+    }
+
+    /* section06 - web 작품 */
+    .web {
+        width: 400px;
+    }
+
+    .flip-outer {
+        width: 400px;
+    }
+}
+
+@media screen and (max-width : 1220px) {
+    /* section01 */
+    .section01 p:first-of-type {
+        left: 2%;
+    }
+
+    .section01 p:last-of-type {
+        right: 2%;
+    }
+
+    /* section05 | section06 - work */
+    .section05 div {
+        width: 350px;
+    }
+
+    /* section06 - web 작품 */
+    .web {
+        width: 350px;
+    }
+
+    .flip-outer {
+        width: 350px;
+    }
+}
+
+@media screen and (max-width : 1090px) {
+    
+    /* section01 */
+    .section01 p {
+        font-size: 140px;
+    }
+    
+    .section01 p:first-of-type {
+        left: 5%;
+        bottom: 300px;
+    }
+
+    .section01 p:last-of-type {
+        right: 5%;
+        bottom: 100px;
+    }
+
+    /* section04 - skill */
+    .skill-text {
+        right: 5%;
+    }
+
+    /* section05 | section06 - work */
+    .section05 div {
+        width: 300px;
+    }
+
+    /* section06 - web 작품 */
+    .web {
+        width: 300px;
+    }
+
+    .flip-outer {
+        width: 300px;
+    }
+
+        /* section07 - contact */
+    /* 내용 작성 칸 */
+    .writeContent::placeholder {
+        padding: 25% 0 0 85%;
+    }
+}
+
+@media screen and (max-width : 1024px) {
+
+    /* section04 - skill */
+    .section04 {
+        height: 800px;
+    }
+
+    .swiperContainer {
+        width: 90%;
+        margin-left: 3%;
+    }
+    
+
+    .skill-text {
+        width: 550px;
+        top: 480px;
+        right: 25%;
     }
 
     /* section05 | section06 - work */
@@ -153,16 +418,6 @@
         left: 25%;
     }
 
-    .section07 form {
-        left: 40px;
-        top : 600px;
-        width: 90%;
-    }
-
-    #emailForm td {
-        width: 40%;
-    }
-
     /* 글 작성 form input/select 태그 css */
     /* 게시글 제목 */
     .writetitle::placeholder {
@@ -172,6 +427,173 @@
     /* 내용 작성 칸 */
     .writeContent::placeholder {
         padding: 210px 0 0 550px;
+    }
+}
+
+@media screen and (max-width : 960px) {
+    nav {
+        margin-right: 5%;
+        font-size: 14px;
+    }
+
+    .section01 p {
+        font-size: 120px;
+    }
+
+    .section01 p:first-of-type {
+        left: 5%;
+        bottom: 200px;
+    }
+
+    .section01 p:last-of-type {
+        right: 5%;
+        bottom: 50px;
+    }
+
+    /* section03 */
+    .education {
+        right: 20px;
+    }
+
+    /* section04 - skill */
+    .skill-text {
+        right: 23%;
+    }
+}
+
+@media screen and (max-width : 930px) {
+    menu {
+        margin-left: 5%;
+    }
+
+    /* section03 */
+    .education {
+        bottom: 4%;
+        right: 8%;
+    }
+
+    .education table {
+        width: 780px;
+    }
+
+    .td-title {
+        width: 460px;
+    }
+
+    /* section04 - skill */
+    .skill-text {
+        right: 20%;
+    }
+}
+
+@media screen and (max-width : 860px) {
+
+    /* section03 */
+    .certificate {
+        top: 350px;
+        left: 60%;
+    }
+
+    .bear {
+        width: 250px;
+        top: 490px;
+        left: 60%;
+    }
+
+    .education {
+        bottom: 4%;
+        right: 8%;
+    }
+
+    .education table {
+        width: 700px;
+    }
+
+    .td-title {
+        width: 380px;
+    }
+
+    /* section07 - contact */
+    .section07 {
+        height: 1150px;
+        position: relative;
+    }
+
+    .section07 img {
+        position: absolute;
+        top: 100px;
+    }
+
+    .section07 div:first-child {
+        position: absolute;
+        top: 50px;
+        left: 20%;
+    }
+
+    /* 글 작성 form input/select 태그 css */
+    /* 게시글 제목 */
+    .writetitle::placeholder {
+        padding-left: 88%;
+    }
+
+    /* 내용 작성 칸 */
+    .writeContent::placeholder {
+        padding: 35% 0 0 80%;
+    }
+}
+
+@media screen and (max-width : 780px) {
+
+    /* section03 */
+    .introduce img {
+        width: 300px;
+    }
+
+    .certificate {
+        top: 250px;
+        left: 55%;
+    }
+
+    .bear {
+        top: 400px;
+        left: 55%;
+    }
+
+    .education {
+        bottom: 8%;
+        right: 3%;
+    }
+    
+    /* section04 - skill */
+    .skill-text {
+        right: 16%;
+    }
+
+    /* section06 - web 작품 */
+
+    .section06 {
+        height: 1300px;
+    }
+
+    .slideContainer {
+        grid-template-columns: repeat(2, 1fr);
+
+    }
+
+    .web {
+        width: 300px;
+        height: 400px;
+    }
+
+    .flip-outer {
+        width: 300px;
+        height: 300px;
+    }
+
+    /* section07 - contact */
+    /* 내용 작성 칸 */
+    .writeContent::placeholder {
+        padding: 35% 0 0 78%;
     }
 }
 
@@ -206,8 +628,7 @@
     }
 
     nav {
-    margin-right: 60px;
-    padding-top: 10px;
+    font-size: 12px;
     }
 
     /* main 영역 */
@@ -227,13 +648,11 @@
     }
 
     .section01 p:first-of-type {
-        left: 10%;
-        bottom: 200px;
+        left: 5%;
     }
 
     .section01 p:last-of-type {
-        right: 10%;
-        bottom: 50px;
+        right: 5%;
     }
 
     /* section02 */
@@ -296,6 +715,7 @@
 
     /* section04 - skill */
     .swiperContainer {
+        margin-left: 0;
         width: 700px;
     }
 
@@ -313,7 +733,7 @@
 
     /* section05 | section06 - work */
     .workTitle, .contactTitle {
-        font-size: 50px;
+        font-size: 48px;
     }
 
     .section05 {
@@ -345,11 +765,11 @@
     }
 
     .web {
-        width: 330px;
+        width: 300px;
     }
 
     .flip-outer {
-        width: 330px;
+        width: 300px;
     }
 
     .front {
@@ -377,36 +797,19 @@
     }
 
     /* section07 - contact */
-    .section07 {
-        height: 1150px;
-        position: relative;
-        font-size: 13px;
-    }
-
     .section07 img {
         margin: 50px 0 0 30px;
     }
 
     .section07 div:first-child {
-        left: 22.5%;
+        left: 18%;
     }
 
     /* 글 작성 form input/select 태그 css */
 
-    #writer::placeholder, #company::placeholder {
-        font-size: 0.8em;
-        padding-left: 65%;
-        box-sizing: border-box;
-    }
-
-    /* 게시글 제목 */
-    .writetitle::placeholder {
-        padding-left: 85%;
-    }
-
     /* 내용 작성 칸 */
     .writeContent::placeholder {
-        padding: 210px 0 0 75%;
+        padding: 50% 0 0 72%;
     }
 
     #writeSubmit {
@@ -416,7 +819,236 @@
     }
 }
 
-@media screen and (max-width : 480px) {
+@media screen and (max-width : 650px) {
+    /* section03 */
+    .certificate {
+        top: 180px;
+        left: 350px;
+        line-height: 25px;
+    }
+
+    .bear {
+        width: 250px;
+        top: 320px;
+        left: 350px;
+    }
+
+    .education {
+        right: 55px;
+    }
+
+    .education table {
+        width: 500px;
+    }
+
+    .td-title {
+        width: 270px;
+    }
+
+    /* section04 - skill */
+    .swiperContainer {
+        margin-left: -5%;
+        width: 700px;
+    }
+}
+
+@media screen and (max-width : 610px) {
+    /* section01 */
+    .section01 {
+        height: 700px;
+    }
+
+    .section01 p {
+        font-size: 80px;
+    }
+
+    /* section03 */
+    .certificate {
+        top: 190px;
+        left: 350px;
+        line-height: 25px;
+    }
+
+    .bear {
+        width: 200px;
+        top: 330px;
+        left: 350px;
+    }
+
+    .education {
+        right: 45px;
+    }
+
+    /* section04 - skill */
+    .swiperContainer {
+        margin-left: -10%;
+    }
+
+    /* section05 | section06 - work */
+    .workTitle, .contactTitle {
+        font-size: 48px;
+    }
+
+    .section05 div {
+        width: 250px;
+        height: 250px;
+        position: relative;
+        padding-top: 90px;
+
+        line-height: 30px;
+    }
+
+    .modal {
+        left: 5%;
+    }
+
+    /* section06 - web 작품 */
+    .web {
+        width: 250px;
+    }
+
+    .flip-outer {
+        width: 250px;
+    }
+
+    .modal-web {
+        left: 3%;
+    }
+
+    .modal-web img {
+        margin-left:5%;
+    }
+}
+
+@media screen and (max-width : 570px) {
+    /* section03 */
+
+    .introduce img {
+        width: 200px;
+    }
+
+    .certificate {
+        left: 300px;
+    }
+
+    .bear {
+        width: 200px;
+        top: 330px;
+        left: 300px;
+    }
+
+    .education {
+        right: 3%;
+    }
+
+    /* section07 - contact */
+    .section07 div:first-child {
+        left: 12%;
+    }
+
+    /* 글 작성 form input/select 태그 css */
+    /* 게시글 제목 */
+    .writetitle::placeholder {
+        padding-left: 85%;
+    }
+
+    /* 내용 작성 칸 */
+    .writeContent::placeholder {
+        padding: 55% 0 0 68%;
+    }
+}
+
+@media screen and (max-width : 530px) {
+    /* header 영역 */
+    h1 {
+    font-weight: 600;
+    text-align: center;
+    position: absolute;
+    left: 55%;
+    }
+
+    nav {
+    display: none;
+    }
+
+    /* section03 */
+    .introduce {
+        left: 30px;
+    }
+
+    .introduce img {
+        width: 200px;
+    }
+
+    .certificate {
+        left: 270px;
+    }
+
+    .bear {
+        left: 270px;
+    }
+
+    .education {
+        right: 4%;
+    }
+
+    .education table {
+        width: 450px;
+    }
+
+    .td-title {
+        width: 220px;
+    }
+
+    /* section04 - skill */
+    .swiperContainer {
+        margin-left: 0;
+        width: 100%;
+    }
+
+    /* section05 work-design */
+
+    .section05 div {
+        width: 200px;
+        height: 250px;
+        font-size: 11px;
+    }
+
+    /* section06 - web 작품 */
+    .web {
+        width: 215px;
+    }
+
+    .flip-outer {
+        width: 215px;
+    }
+
+    .front {
+        font-size: 8px;
+    }
+
+    /* section07 - contact */
+    .section07 div:first-child {
+        left: 8%;
+    }
+
+    /* 글 작성 form input/select 태그 css */
+    #writer::placeholder, #company::placeholder {
+        padding-left: 40%;
+    }
+
+    /* 게시글 제목 */
+    .writetitle::placeholder {
+        padding-left: 82%;
+    }
+
+    /* 내용 작성 칸 */
+    .writeContent::placeholder {
+        padding: 65% 0 0 60%;
+    }
+}
+
+@media screen and (max-width : 485px) {
     /* header 영역 */
     menu {
         margin-left: 10%;
@@ -639,23 +1271,49 @@
     }
 }
 
-@media screen and (max-width : 370px) {
-    /* header 영역 */
-    menu {
-        margin-left: 10%;
+@media screen and (max-width : 455px) {
+    
+    /* section03 */
+    .introduce img {
+        width: 350px;
     }
 
-    h1 {
-        margin-left: 0;
-        font-size: 24px;
-        position: absolute;
-        left: 200px;
+    .certificate {
+        top: 620px;
     }
 
-    nav {
-        display: none;
+    .education {
+        top: 780px;
     }
 
+    .education table {
+        width: 100%;
+    }
+
+    .td-title {
+        width: 190px;
+    }
+
+    /* section07 - contact */
+    .section07 {
+        height: 1100px;
+    }
+
+    .section07 img {
+        width: 300px;
+        margin: 0;
+        top: 120px;
+        left: 20%;
+    }
+
+    .section07 form {
+        left: 25px;
+        top : 550px;
+        width: 90%;
+    }
+}
+
+@media screen and (max-width : 415px) {
     /* main 영역 */
 
     /* section01 */
@@ -668,42 +1326,31 @@
     }
 
     .section01 p:first-of-type {
-        left: 5%;
+        left: 10%;
         bottom: 100px;
     }
 
     .section01 p:last-of-type {
-        right: 5%;
+        right: 10%;
         bottom: 40px;
-    }
-
-    /* section02 */
-    
-    .introTitle {
-        font-size: 18px;
-    }
-
-    .section03 h2, .section04 h2 {
-        font-size: 30px;
     }
 
     /* section03 */
     .section03 {
-        height: 1250px;
+        height: 1150px;
     }
 
     .introduce {
-        top: 120px;
-        left: 40px;
+        left: 45px;
     }
 
     .introduce img {
-        width: 250px;
+        width: 300px;
     }
 
     .certificate {
-        top: 530px;
-        left: 40px;
+        top: 560px;
+        left: 45px;
     }
 
     .education {
@@ -753,7 +1400,6 @@
     /* section07 - contact */
     .section07 {
         height: 500px;
-        font-size: 10px;
     }
 
     .email {
@@ -762,6 +1408,7 @@
 
     .section07 div:first-child {
         top: 0;
+        left: 4%;
     }
 
     .section07 img {
@@ -777,6 +1424,54 @@
         font-size: 16px;
         position: absolute;
         top: 430px;
-        left: 100px;
+        left: 32%;
     }
+}
+
+@media screen and (max-width : 360px) {
+        /* header 영역 */
+        h1 {
+            left: 45%;
+            }
+
+        /* section03 */
+        .section03 {
+            height: 1200px;
+        }
+
+        .introduce img {
+            width: 250px;
+        }
+
+        .certificate {
+            top: 530px;
+        }
+
+        .education {
+            top: 700px;
+        }
+        
+        /* section05 */
+        .modal {
+            top: 150px;
+            height: 75%;
+        }
+
+        /* section07 - contact */
+        .section07 {
+            height: 450px;
+        }
+
+        .section07 div:first-child {
+            left: 0;
+        }
+
+        .section07 img {
+            width: 220px;
+        }
+
+        .section07 p {
+            top: 400px;
+            left: 28%;
+        }
 }
