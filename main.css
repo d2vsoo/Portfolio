@@ -47,10 +47,12 @@ a {
 #Wrap {
     max-width: 1920px;
     background-color: black;
+    overflow: hidden;
 }
 
 /* header 영역 */
 header {
+        overflow: hidden;
         width: 100%;
         height: 100px;
 
