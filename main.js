@@ -38,6 +38,7 @@ let menuClick = 0;
 document.querySelector('.menuButton').addEventListener('click', () => {
 
     if (menuClick === 0) {
+        menu.style.display = 'block';
         menu.style.animation = 'menu 1.5s';
         menuClick += 1;
 

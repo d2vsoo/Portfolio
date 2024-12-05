@@ -115,6 +115,7 @@ menu p:hover {
     top: 100px;
     left: 0;
     z-index: 6;
+    display: none;
 }
 
 .menu li {
