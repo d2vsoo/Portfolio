@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, minimum-scale=1">
-    <title> 웹퍼블리셔 신지수 </title>
+    <title> 신지수의 포트폴리오 </title>
 
     <!-- 파비콘 -->
     <link rel="icon" href="./public/img/logo_blue.ico" type="image/x-icon">
@@ -25,25 +25,28 @@
     <div id="Wrap">
         <!-- header 영역  -->
         <header class="header">
-            <!-- 메뉴 영역 -->
-            <menu>
-                <p class="menuButton"> Menu </p>
-                <ul class="menu">
-                    <li> <a href="#info" data-id="info"> Info </a></li>
-                    <li> <a href="#skill" data-id="skill"> Skill </a></li>
-                    <li> <a href="#work" data-id="work"> Work </a></li>
-                    <li> <a href="#contact" data-id="contact"> Contact </a></li>
-                </ul>
-            </menu>
+            <div class="headerWrap">
+                <!-- 메뉴 영역 -->
+                <menu>
+                    <p class="menuButton"> Menu </p>
+                    <ul class="menu">
+                        <li> <a href="#info" data-id="info"> Info </a></li>
+                        <li> <a href="#skill" data-id="skill"> Skill </a></li>
+                        <li> <a href="#work" data-id="work"> Work </a></li>
+                        <li> <a href="#contact" data-id="contact"> Contact </a></li>
+                    </ul>
+                </menu>
 
-            <!-- 포트폴리오 제목 -->
-            <h1> <a href="#"> PORTFOLIO </a> </h1>
+                <!-- 포트폴리오 제목 -->
+                <h1> <a href="#"> PORTFOLIO </a> </h1>
 
-            <!-- nav 영역 -->
-            <nav>
-                <p class="date"> </p>
-                <p class="time"> </p>
-            </nav>
+                <!-- nav 영역 -->
+                <nav>
+                    <p class="date"> </p>
+                    <p class="time"> </p>
+                </nav>
+            </div>
+
         </header>
 
         <!-- MAIN 영역 -->
@@ -229,7 +232,7 @@
                 <!-- modal WORK - 독도 -->
                 <div class="modal work05">
                     <h3> 04 | 3단 접지 리플렛_독도박물관 </h3>
-                    <img src="./public/img/re_독도리플렛 기획서.jpg" alt="독도" width="1200">
+                    <img src="./public/img/re_독도(포스터 추가).png" alt="독도" width="1200">
                     <!-- <button id="exit" class="exit"> 돌아가기 </button> -->
                 </div>
             </div>
@@ -453,25 +456,29 @@
                         <tr>
                             <th> 작성자 </th>
                             <td>
-                                <input type="text" id="writer" name="writer" required placeholder="10자 이내" maxlength="10">
+                                <input type="text" id="writer" name="writer" required placeholder="10자 이내"
+                                    maxlength="10">
                             </td>
                             <th>
                                 회사명
                             </th>
                             <td>
-                                <input type="text" id="company" name="company" required placeholder="10자 이내" maxlength="10" >
+                                <input type="text" id="company" name="company" required placeholder="10자 이내"
+                                    maxlength="10">
                             </td>
                         </tr>
                         <tr>
                             <th> 제목 </th>
-                            <td colspan="3"> 
-                                <input type="text" class="writetitle" required placeholder="24자 이내" name="writetitle" maxlength="24"> 
+                            <td colspan="3">
+                                <input type="text" class="writetitle" required placeholder="24자 이내" name="writetitle"
+                                    maxlength="24">
                             </td>
                         </tr>
                         <tr>
                             <th> 내용 </th>
                             <td class="writebottom" colspan="3">
-                                    <textarea name="writeContent" class="writeContent" required maxlength="1000" placeholder="1000자 이내 작성 가능"></textarea>
+                                <textarea name="writeContent" class="writeContent" required maxlength="1000"
+                                    placeholder="1000자 이내 작성 가능"></textarea>
                             </td>
                         </tr>
                     </table>

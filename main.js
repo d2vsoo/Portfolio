@@ -31,13 +31,13 @@ setInterval(updateTime, 1000);
 // 메뉴 나타내기
 // 메뉴 눌렀을 때 왼쪽에서 애니메이션으로 부드럽게 나타나기 효과
 const menu = document.querySelector('.menu');
+console.log(menu)
 const submenu = document.querySelectorAll('.menu li');
 
 let menuClick = 0;
 document.querySelector('.menuButton').addEventListener('click', () => {
 
     if (menuClick === 0) {
-        menu.style.display = 'block';
         menu.style.animation = 'menu 1.5s';
         menuClick += 1;
 

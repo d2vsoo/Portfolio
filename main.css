@@ -51,18 +51,21 @@ a {
 }
 
 /* header 영역 */
-header {
+.header {
+    width: 100%;
+    position: fixed;
+    z-index: 3;
+}
+
+.headerWrap {
         overflow: hidden;
         width: 100%;
         height: 100px;
-        overflow : hidden;
 
         display: flex;
-        position: fixed;
         justify-content: space-between;
         justify-items: center;
         align-items: center;
-        z-index: 3;
 
         background-color: black;
         color: white;
@@ -111,7 +114,7 @@ menu p:hover {
     position: absolute;
     top: 100px;
     left: 0;
-    display: none;
+    z-index: 6;
 }
 
 .menu li {
