@@ -26,8 +26,9 @@
         <!-- header 영역  -->
         <header class="header">
             <div class="headerWrap">
+
                 <!-- 메뉴 영역 -->
-                <menu>
+                <div id="menu">
                     <p class="menuButton"> Menu </p>
                     <ul class="menu">
                         <li> <a href="#info" data-id="info"> Info </a></li>
@@ -35,7 +36,8 @@
                         <li> <a href="#work" data-id="work"> Work </a></li>
                         <li> <a href="#contact" data-id="contact"> Contact </a></li>
                     </ul>
-                </menu>
+                </div>
+                    
 
                 <!-- 포트폴리오 제목 -->
                 <h1> <a href="#"> PORTFOLIO </a> </h1>
@@ -52,13 +54,13 @@
         <!-- MAIN 영역 -->
         <main>
             <!-- section01 -->
-            <section class="section section01">
+            <div class="sectionAll section01">
                 <p> JISOO'S </p>
                 <p> PORTFOLIO </p>
-            </section>
+            </div>
 
             <!-- section02 -->
-            <section class="section section02" id="info">
+            <div class="sectionAll section02" id="info">
                 <p class="introTitle"> 신지수의 Portfolio </p>
                 <div class="intro">
                     <p> 열린 마음과 상대방을 위한 배려 </p>
@@ -66,10 +68,10 @@
                     <p> 끊임없는 발전과 무한 가능성 </p>
                     <p> 두 번의 실수는 절대 없는 섬세함 </p>
                 </div>
-            </section>
+            </div>
 
             <!-- section03 -->
-            <section class="section section03">
+            <section class="sectionAll section03">
                 <h2> INFO </h2>
                 <div class="introduce">
                     <img src="./public/img/me.jpg" alt="me" width="400">
@@ -110,7 +112,7 @@
                 </div>
             </section>
 
-            <section class="section section04" id="skill">
+            <section class="sectionAll section04" id="skill">
                 <h2> SKILL </h2>
                 <div class="skill">
                     <!-- Slider main container -->
@@ -160,7 +162,7 @@
 
             <!-- section05 -->
             <h2 class="workTitle workTitle01" id="work"> WORK - Design </h2>
-            <section class="section section05">
+            <section class="sectionAll section05">
                 <div class="work01">
                     <h3> 영화 포스터 제작 </h3>
                     <p> 아바타 - 물의 길 </p>
@@ -196,7 +198,7 @@
                 <!-- modal WORK - 아바타 -->
                 <div class="modal work01">
                     <h3> 01 | 영화 포스터_아바타 </h3>
-                    <img src="./public/img/아바타 작품기획서.jpg" alt="아바타" width="1200">
+                    <img src="./public/img/아바타기획서.jpg" alt="아바타" width="1200">
                     <!-- <button id="exit" class="exit"> 돌아가기 </button> -->
                 </div>
             </div>
@@ -205,7 +207,7 @@
                 <!-- modal WORK - 한산 -->
                 <div class="modal work02">
                     <h3> 02 | 영화 포스터_한산:용의 출현 </h3>
-                    <img src="./public/img/re_한산 작품기획서.jpg" alt="한산" width="1200">
+                    <img src="./public/img/re_한산기획서.jpg" alt="한산" width="1200">
                     <!-- <button id="exit" class="exit"> 돌아가기 </button> -->
                 </div>
             </div>
@@ -214,7 +216,7 @@
                 <!-- modal WORK - 하이키 -->
                 <div class="modal work03">
                     <h3> 06 | Album Cover_하이키 </h3>
-                    <img src="./public/img/re_하이키 앨범자켓 기획서.jpg" alt="하이키" width="1200">
+                    <img src="./public/img/re_하이키기획서.jpg" alt="하이키" width="1200">
                     <!-- <button id="exit" class="exit"> 돌아가기 </button> -->
                 </div>
             </div>
@@ -223,7 +225,7 @@
                 <!-- modal WORK - book -->
                 <div class="modal work04">
                     <h3> 03 | Book Cover_아름다운 배웅 </h3>
-                    <img src="./public/img/re_아름다운 배웅 기획서.jpg" alt="book" width="1200">
+                    <img src="./public/img/re_아름다운배웅기획서.jpg" alt="book" width="1200">
                     <!-- <button id="exit" class="exit"> 돌아가기 </button> -->
                 </div>
             </div>
@@ -232,7 +234,7 @@
                 <!-- modal WORK - 독도 -->
                 <div class="modal work05">
                     <h3> 04 | 3단 접지 리플렛_독도박물관 </h3>
-                    <img src="./public/img/re_독도(포스터 추가).png" alt="독도" width="1200">
+                    <img src="./public/img/re_독도기획서포스터추가.png" alt="독도" width="1200">
                     <!-- <button id="exit" class="exit"> 돌아가기 </button> -->
                 </div>
             </div>
@@ -241,7 +243,7 @@
                 <!-- modal WORK - 유승호 -->
                 <div class="modal work06">
                     <h3> 05 | 잡지 내지 리디자인_유승호 배우 </h3>
-                    <img src="./public/img/re_잡지내지디자인 기획서.jpg" alt="유승호" width="1200">
+                    <img src="./public/img/re_잡지내지디자인기획서.jpg" alt="유승호" width="1200">
                     <!-- <button id="exit" class="exit"> 돌아가기 </button> -->
                 </div>
             </div>
@@ -250,14 +252,14 @@
                 <!-- modal WORK - 오아 -->
                 <div class="modal work07">
                     <h3> 07 | 상세페이지 제작_오아 봉고데기 </h3>
-                    <img src="./public/img/re_상세페이지 기획서.jpg" alt="오아" width="1200">
+                    <img src="./public/img/re_상세페이지기획서.jpg" alt="오아" width="1200">
                     <!-- <button id="exit" class="exit"> 돌아가기 </button> -->
                 </div>
             </div>
 
             <!-- section06 -->
             <h2 class="workTitle workTitle02"> WORK - Web </h2>
-            <section class="section section06">
+            <section class="sectionAll section06">
                 <div class="slideWrapper">
                     <div class="slideContainer">
                         <div class="web web01">
@@ -402,19 +404,19 @@
                         <h3> 04 | 웹사이트 리뉴얼 - 의정부을지대학교병원 장례식장 </h3>
                         <div class="login">
                             <p> 회원가입 및 로그인 </p>
-                            <video src="./public/video/회원가입 및 로그인.mp4" width="1000" controls></video>
+                            <video src="./public/video/회원가입및로그인.mp4" width="1000" controls > </video>
                         </div>
                         <div class="funeral-intro">
                             <p> 장례식장 소개 </p>
-                            <video src="./public/video/장례식장 소개.mp4" width="1000" controls</video>
+                            <video src="./public/video/장례식장소개.mp4" width="1000" controls> </video>
                         </div>
                         <div class="logout">
                             <p> 빈소현황 및 로그아웃 </p>
-                            <video src="./public/video/빈소현황 및 로그아웃.mp4" width="1000" controls></video>
+                            <video src="./public/video/빈소현황및로그아웃.mp4" width="1000" controls></video>
                         </div>
                         <div class="funeral-process">
                             <p> 장례식장 이용절차 </p>
-                            <video src="./public/video/장례식장 이용절차.mp4" width="1000" controls></video>
+                            <video src="./public/video/장례식장이용절차.mp4" width="1000" controls></video>
                         </div>
                     </div>
                 </div>
@@ -439,7 +441,7 @@
                 </div>
             </section>
 
-            <section class="section section07" id="contact">
+            <section class="sectionAll section07" id="contact">
                 <div>
                     <img src="./public/img/me3.jpg" alt="me03" width="360">
                     <h3 class="contactTitle"> Contact Me </h3>
@@ -448,8 +450,7 @@
                 <!-- 이메일 보내기 폼 -->
                 <iframe name="email" style="display: none;"></iframe>
 
-                <form role="form"
-                    action="https://script.google.com/macros/s/AKfycbz3rSYpiEpfjfB0DT0xTH963XWPHWaF224fHIZ7aCnpBjQ6BqIrlusXmAAmsEMwmD5NkQ/exec"
+                <form action="https://script.google.com/macros/s/AKfycbz3rSYpiEpfjfB0DT0xTH963XWPHWaF224fHIZ7aCnpBjQ6BqIrlusXmAAmsEMwmD5NkQ/exec"
                     method="post" target="email" onsubmit="alert('이메일이 전송되었습니다. 감사합니다.')">
 
                     <table id="emailForm">
@@ -492,13 +493,11 @@
 
         <!-- FOOTER 영역 -->
         <footer>
-            <footer>
                 <p> © 2024. 신지수 Co. all rights reserved. </p>
-            </footer>
         </footer>
     </div>
 
-    <script type="text/javascript" src="./main.js"></script>
+    <script src="./main.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
     <script type="module">

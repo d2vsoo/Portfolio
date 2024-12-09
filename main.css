@@ -72,18 +72,18 @@ a {
         transition: all 1s;
     }
 
-menu {
+#menu {
     width: 20%;
     height: 60px;
     margin-left: 100px;
     padding-top: 25px;
     box-sizing: border-box;
-
+    
     text-align: center;
     line-height: 25px;
 }
 
-menu p:hover {
+#menu p:hover {
     cursor: pointer;
     transform: scale(1.1);
 }
