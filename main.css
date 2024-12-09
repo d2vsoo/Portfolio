@@ -411,6 +411,10 @@ main {
     background-image: url('./public/img/고데기.png');
 }
 
+.section05 div:nth-child(8)::after {
+    background-image: url('./public/img/명함_앞면.png');
+}
+
 .section05 div:hover {
     cursor: pointer;
     transform: scale(1.1);

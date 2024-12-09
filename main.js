@@ -140,7 +140,7 @@ $('.workTitle02').on('click', () => {
 
 // design
 // 모달창 띄우기
-for (let i = 1; i <= 7; i++) {
+for (let i = 1; i <= 8; i++) {
     $('.work0' + i).on('click', function () {
         $('#work0' + i).css('display', 'block');
     });
